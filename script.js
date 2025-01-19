@@ -70,19 +70,19 @@ function playMovie(videoUrl) {
 addMovie(
 "Dream Girl 2",
 "https://upload.wikimedia.org/wikipedia/en/5/57/Dream_Girl_2_film_poster.jpg",
-"Dream Girl 2 is a 2023 Indian Hindi-language comedy-drama film...",
-"https://drive.google.com/file/d/1XYZDreamGirlLink/view?usp=sharing"
+"Dream Girl 2 is a 2023 Indian Hindi-language comedy-drama film.",
+"https://drive.google.com/file/d/19t-tzYbW2Ehu90wvGPv85es51Y7Kalk3/view?usp=drive_link"
 );
 addMovie(
 "Oppenheimer",
 "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
-"Oppenheimer is a 2023 epic biographical drama film by Christopher Nolan...",
-"https://drive.google.com/file/d/1XYZOppenheimerLink/view?usp=sharing"
+"Oppenheimer is a 2023 epic biographical drama film of J. Robert Oppenheimer by Christopher Nolan.",
+"https://drive.google.com/file/d/14syFd7_mdFV3bzj29ABxo95ZhdK1adMI/view?usp=drive_link"
 );
 addMovie(
 "Game Changer",
 "https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg",
-"Game Changer is a 2025 Indian Telugu-language political action film...",
+"Game Changer is a 2025 Indian Telugu-language political action film.",
 "https://drive.google.com/file/d/1Ag6rYpZ991bCvkXIqDDAfmMO-MCPYimN/view?usp=drive_link"
 );
 
