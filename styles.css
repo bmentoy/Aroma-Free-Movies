@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: #333;
 }
 
@@ -13,14 +13,8 @@ header {
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
 #search-bar {
-    margin-bottom: 2rem;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -28,6 +22,8 @@ header {
     width: 60%;
     padding: 0.5rem;
     font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #search-bar button {
@@ -37,6 +33,7 @@ header {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #search-bar button:hover {
@@ -48,13 +45,14 @@ header {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    padding: 0 1rem;
 }
 
 .movie-card {
     width: calc(25% - 1rem);
     max-width: 300px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -62,7 +60,7 @@ header {
 
 .movie-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .movie-card img {
