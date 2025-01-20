@@ -38,9 +38,7 @@ function displayMovies(filteredMovies = movies) {
     filteredMovies.forEach(movie => {
         const movieCard = document.createElement('div');
         movieCard.classList.add('movie-card');
-
         movieCard.addEventListener('click', () => playMovie(movie.video));
-
         movieCard.innerHTML = `
             <img src="${movie.image}" alt="${movie.title}">
             <div class="movie-details">
@@ -48,7 +46,6 @@ function displayMovies(filteredMovies = movies) {
                 <p>${movie.description}</p>
             </div>
         `;
-
         movieList.appendChild(movieCard);
     });
 }
@@ -71,6 +68,9 @@ function playMovie(videoUrl) {
     }
 }
 
+// Display all movies on page load
+displayMovies();
+
 // Add extra movies
 addMovie(
 "Dream Girl 2",
@@ -90,6 +90,3 @@ addMovie(
 "Game Changer is a 2025 Indian Telugu-language political action film.",
 "https://drive.google.com/file/d/1Ag6rYpZ991bCvkXIqDDAfmMO-MCPYimN/view?usp=drive_link"
 );
-
-// Display all movies on page load
-displayMovies();
