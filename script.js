@@ -68,9 +68,6 @@ function playMovie(videoUrl) {
     }
 }
 
-// Display all movies on page load
-displayMovies();
-
 // Add extra movies
 addMovie(
 "Dream Girl 2",
@@ -90,3 +87,6 @@ addMovie(
 "Game Changer is a 2025 Indian Telugu-language political action film.",
 "https://drive.google.com/file/d/1Ag6rYpZ991bCvkXIqDDAfmMO-MCPYimN/view?usp=drive_link"
 );
+
+// Display all movies on page load
+displayMovies();
