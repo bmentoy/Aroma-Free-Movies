@@ -1,60 +1,85 @@
-/* General Styles */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: #333;
-}
-
-header {
-    background-color: #333;
+    background-color: #1c1c1c;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
 }
 
+/* Header styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Search bar styles */
 #search-bar {
-    margin: 2rem auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 #search-bar input {
-    width: 80%;
+    width: 250px;
     padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 #search-bar button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #007BFF;
+    background-color: #ff6347;
     color: #fff;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 #search-bar button:hover {
-    background-color: #0056b3;
+    background-color: #e5533e;
 }
 
-/* Movie List */
+/* Movie list styles */
 .movie-list {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    padding: 0 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
 }
 
-/* Movie Card */
 .movie-card {
-    width: calc(33.333% - 1rem); /* Default size for larger screens */
+    width: calc(25% - 1rem);
     max-width: 300px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -63,7 +88,7 @@ header {
 
 .movie-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .movie-card img {
@@ -81,54 +106,4 @@ header {
 .movie-details {
     text-align: center;
     padding: 10px;
-}
-
-/* Responsive Styles */
-
-/* For tablets and smaller devices (landscape orientation) */
-@media screen and (max-width: 1024px) {
-    .movie-card {
-        width: calc(50% - 1rem); /* Two columns */
-    }
-}
-
-/* For smartphones (portrait orientation) */
-@media screen and (max-width: 768px) {
-    #search-bar input {
-        width: 90%;
-    }
-
-    .movie-card {
-        width: calc(100% - 2rem); /* Single column */
-        margin: 0 auto;
-    }
-}
-
-/* For very small screens (e.g., older smartphones) */
-@media screen and (max-width: 480px) {
-    header {
-        font-size: 1.2rem;
-    }
-
-    #search-bar input {
-        font-size: 0.9rem;
-    }
-
-    #search-bar button {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.8rem;
-    }
-
-    .movie-card {
-        width: calc(100% - 2rem); /* Full width for small devices */
-        margin: 0 auto;
-    }
-
-    .movie-details h3 {
-        font-size: 1rem;
-    }
-
-    .movie-details p {
-        font-size: 0.9rem;
-    }
 }
