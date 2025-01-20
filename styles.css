@@ -14,7 +14,6 @@ header {
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     position: relative;
     border-radius: 10px;
 }
@@ -23,7 +22,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 h1 {
@@ -37,6 +37,24 @@ h1 {
     height: 40px;
     margin-right: 10px;
     border-radius: 5px;
+}
+
+.navigation {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #444;
 }
 
 /* Search bar styles */
@@ -88,6 +106,18 @@ h1 {
     right: 0;
     width: 100%;
     max-width: 300px;
+}
+
+.mobile-nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav-item:hover {
+    background-color: #444;
 }
 
 .mobile-menu input {
