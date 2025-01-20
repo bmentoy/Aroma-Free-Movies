@@ -5,45 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroma Free Movies</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="icon-path/Aroma-icon.png"> <!-- Replace with the correct path -->
+    <link rel="icon" type="image/png" href="https://drive.google.com/file/d/1sH5ut4ITzlgIFWrsWn78kkRINUR4TVTJ/view?usp=drive_link"> <!-- Replace with the correct path -->
 </head>
 <body>
     <header>
         <div class="header-content">
-            <!-- Logo -->
             <h1>
-                <img src="https://via.placeholder.com/40" alt="Logo" class="logo-icon"> <!-- Replace with actual path -->
+                <img src="https://drive.google.com/file/d/1sH5ut4ITzlgIFWrsWn78kkRINUR4TVTJ/view?usp=drive_link" 
+                     alt="Logo" class="logo-icon"> <!-- Replace with the correct path -->
                 Aroma Free Movies
             </h1>
-
-            <!-- Navigation Links (only visible on larger screens) -->
             <nav class="navigation">
-                <a href="#">Category</a>
-                <a href="#">Account</a>
-                <a href="#">Favorites</a>
+                <a href="#" class="nav-item">Category</a>
+                <a href="#" class="nav-item">Account</a>
+                <a href="#" class="nav-item">Favorites</a>
             </nav>
-
-            <!-- Search Bar -->
             <div id="search-bar">
                 <input type="text" id="search" placeholder="Search for a movie...">
                 <button onclick="searchMovie()">Search</button>
             </div>
-
-            <!-- Mobile Toggle Icon -->
-            <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">&#x22EE;</div>
         </div>
-
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu">
-            <a href="#">Category</a>
-            <a href="#">Account</a>
-            <a href="#">Favorites</a>
+            <a href="#" class="mobile-nav-item">Category</a>
+            <a href="#" class="mobile-nav-item">Account</a>
+            <a href="#" class="mobile-nav-item">Favorites</a>
             <input type="text" id="mobile-search" placeholder="Search for a movie...">
             <button onclick="searchMovie()">Search</button>
         </div>
     </header>
 
-    <!-- Movie List -->
     <div id="movie-list" class="movie-list"></div>
 
     <script src="script.js"></script>
