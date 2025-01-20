@@ -16,7 +16,7 @@ const movies = [
         title: "Marco",
         image: "https://upload.wikimedia.org/wikipedia/en/b/b3/Marco_Malayalam_film.jpg",
         description: "Marco is a 2024 Indian Malayalam-language action thriller film starring Unni Mukundan in the titular role.",
-        video: "https://drive.google.com/file/d/1jxB5Ata4Qj2qd6p5m8WqYSYW_zRgaJkf/view?usp=drivesdk"
+        video: "https://drive.google.com/file/d/1jxB5Ata4Qj2qd6p5m8WqYSYW_zRgaJkf/view?usp=sharing"
     },
     {
         title: "Shang-Chi and the Legend of Ten Rings",
@@ -81,21 +81,21 @@ addMovie(
     "Dream Girl 2",
     "https://upload.wikimedia.org/wikipedia/en/5/57/Dream_Girl_2_film_poster.jpg",
     "Dream Girl 2 is a 2023 Indian Hindi-language comedy-drama film.",
-    "https://drive.google.com/file/d/19t-tzYbW2Ehu90wvGPv85es51Y7Kalk3/view?usp=drive_link"
+    "https://drive.google.com/file/d/19t-tzYbW2Ehu90wvGPv85es51Y7Kalk3/view?usp=sharing"
 );
 
 addMovie(
     "Oppenheimer",
     "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
     "Oppenheimer is a 2023 epic biographical drama film of J. Robert Oppenheimer by Christopher Nolan.",
-    "https://drive.google.com/file/d/14syFd7_mdFV3bzj29ABxo95ZhdK1adMI/view?usp=drive_link"
+    "https://drive.google.com/file/d/14syFd7_mdFV3bzj29ABxo95ZhdK1adMI/view?usp=sharing"
 );
 
 addMovie(
     "Game Changer",
     "https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg",
     "Game Changer is a 2025 Indian Telugu-language political action film.",
-    "https://drive.google.com/file/d/1Ag6rYpZ991bCvkXIqDDAfmMO-MCPYimN/view?usp=drive_link"
+    "https://drive.google.com/file/d/1Ag6rYpZ991bCvkXIqDDAfmMO-MCPYimN/view?usp=sharing"
 );
 
 // Display all movies on page load
