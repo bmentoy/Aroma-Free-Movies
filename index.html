@@ -15,54 +15,42 @@
 
 <body>
   <header>
-    <nav>
-      <div class="logo">Aroma Free Movies</div>
-      <button class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul id="mobile-menu" class="menu">
-        <li><a href="https://bmentoy.github.io/Aroma-Free-Movies" class="nav-link">Home</a></li>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/bmentoy/Aroma-Free-Movies/refs/heads/main/Aroma-icon.webp" alt="Aroma Icon" class="site-icon">
+        <a href="bmentoy.github.io/Aroma-Free-Movies" class="logo" onclick="refreshPage()">Aroma Free Movies</a>
+      </div>
+      <ul class="menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#movies" class="nav-link">Movies</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+      <div class="right-actions">
+        <input type="text" id="search" placeholder="Search movies..." oninput="searchMovie()">
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <h1>Welcome to Aroma Free Movies</h1>
-      <p>Stream your favorite movies anytime, anywhere.</p>
-      <a href="#movies" class="cta-btn">Explore Movies</a>
-    </section>
-
     <section id="movies" class="movies-section">
-      <h2>Our Collection</h2>
-      <input type="text" id="search" placeholder="Search movies..." oninput="searchMovie()">
+      <h2>Explore Movies</h2>
       <div id="movie-list" class="movie-list"></div>
-    </section>
-
-    <section id="about" class="about-section">
-      <h2>About Us</h2>
-      <p>Aroma Free Movies is your one-stop destination for free movie streaming. Enjoy a wide variety of movies across genres.</p>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <h2>Contact Us</h2>
-      <p>Email: support@aromamovies.com</p>
-      <p>Follow us on:
-        <a href="#">Facebook</a> |
-        <a href="#">Twitter</a> |
-        <a href="#">Instagram</a>
-      </p>
     </section>
   </main>
 
   <footer>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: support@aromamovies.com</p>
+        <p>Follow us on:
+          <a href="#">Facebook</a> |
+          <a href="#">Twitter</a> |
+          <a href="#">Instagram</a>
+        </p>
+      </section>
     <p>&copy; 2025 Aroma Free Movies. All rights reserved. | <a href="#">Privacy Policy</a></p>
-    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
   </footer>
 
   <script src="script.js"></script>
