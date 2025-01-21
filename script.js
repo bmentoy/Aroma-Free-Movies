@@ -26,12 +26,12 @@ const movies = [
     }
 ];
 
-// Dynamically add movies to the list
+// Function to dynamically add movies to the array
 function addMovie(title, image, description, video = null) {
     movies.push({ title, image, description, video });
 }
 
-// Render movies on the page
+// Render movies dynamically on the page
 function displayMovies(filteredMovies = movies) {
     const movieList = document.getElementById("movie-list");
     movieList.innerHTML = ""; // Clear previous content
@@ -60,14 +60,14 @@ function displayMovies(filteredMovies = movies) {
 
 // Search for movies by title
 function searchMovie() {
-    const searchValue = document.getElementById("search").value.toLowerCase();
+    const searchValue = document.getElementById("search").value.toLowerCase().trim();
     const filteredMovies = movies.filter(movie =>
         movie.title.toLowerCase().includes(searchValue)
     );
     displayMovies(filteredMovies);
 }
 
-// Open movie video link
+// Open movie video link in a new tab
 function playMovie(videoUrl) {
     if (videoUrl) {
         window.open(videoUrl, "_blank");
@@ -76,7 +76,7 @@ function playMovie(videoUrl) {
     }
 }
 
-// Add additional movies dynamically
+// Dynamically add more movies
 addMovie(
     "Dream Girl 2",
     "https://upload.wikimedia.org/wikipedia/en/5/57/Dream_Girl_2_film_poster.jpg",
