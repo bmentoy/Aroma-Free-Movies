@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover and watch free movies online on Aroma Free Movies!">
+  <meta name="description" content="Aroma Free Movies - Stream and enjoy your favorite movies for free.">
+  <meta name="keywords" content="movies, free movies, streaming, online movies">
+  <meta name="author" content="Aroma Movies">
   <title>Aroma Free Movies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="https://raw.githubusercontent.com/bmentoy/Aroma-Free-Movies/refs/heads/main/Aroma-icon.webp" type="image/webp">
 </head>
+
 <body>
   <header>
-    <div class="header-container">
-      <h1>Aroma Free Movies</h1>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <nav id="mobile-menu">
-        <a href="#movies">Movies</a>
-        <a href="#about">About</a>
-      </nav>
-    </div>
-    <div class="search-container">
-      <input id="search" type="text" placeholder="Search movies..." oninput="searchMovie()">
-    </div>
+    <nav>
+      <div class="logo">Aroma Free Movies</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="mobile-menu" class="menu">
+        <li><a href="https://bmentoy.github.io/Aroma-Free-Movies/" class="nav-link">Home</a></li>
+        <li><a href="#movies" class="nav-link">Movies</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
+    <section class="hero">
+      <h1>Welcome to Aroma Free Movies</h1>
+      <p>Stream your favorite movies anytime, anywhere.</p>
+      <a href="#movies" class="cta-btn">Explore Movies</a>
+    </section>
+
     <section id="movies" class="movies-section">
+      <h2>Our Collection</h2>
+      <input type="text" id="search" placeholder="Search movies..." oninput="searchMovie()">
       <div id="movie-list" class="movie-list"></div>
     </section>
+
     <section id="about" class="about-section">
-      <h2>About Aroma Free Movies</h2>
-      <p>
-        Welcome to Aroma Free Movies, your go-to site for free, high-quality entertainment. Watch movies from
-        various genres anytime, anywhere!
+      <h2>About Us</h2>
+      <p>Aroma Free Movies is your one-stop destination for free movie streaming. Enjoy a wide variety of movies across genres.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Email: support@aromamovies.com</p>
+      <p>Follow us on:
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
       </p>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Aroma Free Movies. All rights reserved.</p>
+    <p>&copy; 2025 Aroma Free Movies. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
   </footer>
+
   <script src="script.js"></script>
 </body>
+
 </html>
