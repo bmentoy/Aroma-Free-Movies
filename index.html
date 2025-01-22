@@ -18,7 +18,7 @@
     <nav class="navbar">
       <div class="logo-container">
         <img src="https://raw.githubusercontent.com/bmentoy/Aroma-Free-Movies/refs/heads/main/Aroma-icon.webp" alt="Aroma Icon" class="site-icon">
-        <a href="bmentoy.github.io/Aroma-Free-Movies" class="logo" onclick="refreshPage()">Aroma Free Movies</a>
+        <a href="#" class="logo">Aroma Free Movies</a>
       </div>
       <ul class="menu">
         <li><a href="#home" class="nav-link">Home</a></li>
@@ -28,9 +28,19 @@
       </ul>
       <div class="right-actions">
         <input type="text" id="search" placeholder="Search movies..." oninput="searchMovie()">
-        <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+        <button id="dark-mode-toggle">Dark Mode</button>
       </div>
+      <button id="menu-toggle" class="menu-toggle">&#9776;</button>
     </nav>
+    <div id="mobile-menu" class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="dark-mode-toggle-mobile">Dark Mode</button></li>
+      </ul>
+    </div>
   </header>
 
   <main>
@@ -42,14 +52,14 @@
 
   <footer>
     <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <p>Email: support@aromamovies.com</p>
-        <p>Follow us on:
-          <a href="#">Facebook</a> |
-          <a href="#">Twitter</a> |
-          <a href="#">Instagram</a>
-        </p>
-      </section>
+      <h2>Contact Us</h2>
+      <p>Email: support@aromamovies.com</p>
+      <p>Follow us on:
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+      </p>
+    </section>
     <p>&copy; 2025 Aroma Free Movies. All rights reserved. | <a href="#">Privacy Policy</a></p>
   </footer>
 
