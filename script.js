@@ -1,9 +1,3 @@
-// Toggle menu for mobile view
-function toggleMenu() {
-    const menu = document.getElementById("mobile-menu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-}
-
 // Movies array
 const movies = [
     {
@@ -76,6 +70,27 @@ function playMovie(videoUrl) {
     }
 }
 
+// Dark Mode Toggle
+function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+    document.body.classList.toggle('light');
+  }
+  
+  // Handle Mobile Menu Toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+  });
+  
+  // Add Dark Mode Toggle for Mobile Menu
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
+  const darkModeToggleMobile = document.getElementById("dark-mode-toggle-mobile");
+  
+  darkModeToggle.addEventListener("click", toggleDarkMode);
+  darkModeToggleMobile.addEventListener("click", toggleDarkMode);
+
 // Dynamically add more movies
 addMovie(
     "Dream Girl 2",
@@ -100,3 +115,6 @@ addMovie(
 
 // Display all movies on page load
 displayMovies();
+
+// Initialize Theme
+document.body.classList.add("light");
