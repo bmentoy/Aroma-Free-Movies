@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Aroma Free Movies">
-  <meta name="keywords" content="about, movies, streaming">
+  <meta name="description" content="Aroma Free Movies - Stream and enjoy your favorite movies for free.">
+  <meta name="keywords" content="movies, free movies, streaming, online movies">
   <meta name="author" content="Aroma Movies">
-  <title>About - Aroma Free Movies</title>
+  <title>Aroma Free Movies</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -20,6 +20,7 @@
       </div>
       <ul class="menu" id="menu">
         <li><a href="index.html">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <!-- Add search bar and dark mode button inside the menu -->
@@ -35,21 +36,31 @@
   </header>
 
   <main>
-    <section id="about">
-      <h1>About Us</h1>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Welcome to <strong>Aroma Free Movies</strong>, your go-to platform for streaming the latest movies for free. We are passionate about bringing you high-quality entertainment without any cost.</p>
-          <p>Our mission is to make movies accessible to everyone, everywhere. Whether you're a fan of action, drama, or comedy, we've got something for you.</p>
-          <p>At Aroma Free Movies, we believe in the power of storytelling. Our curated collection of movies ensures that you always have something exciting to watch.</p>
-        </div>
-        <div class="about-image">
-          <img src="https://via.placeholder.com/400" alt="About Us Image">
-        </div>
-      </div>
+    <section id="movies">
+      <div id="movie-list"></div>
+      <button id="load-more">Load More</button>
     </section>
   </main>
 
+  <!-- Movie Details Modal -->
+  <div id="movie-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-title"></h2>
+      <iframe id="modal-trailer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- Loading Spinner -->
+  <div id="loading-spinner" class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Go to top">↑</button>
+
+  <!-- Footer -->
   <footer>
     <section id="contact">
       <h2>Contact Us</h2>
@@ -63,17 +74,6 @@
     <p>&copy; 2025 Aroma Free Movies. All rights reserved. | <a href="#">Privacy Policy</a></p>
   </footer>
 
-  <script>
-    // JavaScript for toggling the menu on small screens
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('active');
-    });
-
-    // JavaScript for dark mode toggle
-    document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
