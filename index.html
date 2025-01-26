@@ -8,46 +8,69 @@
   <meta name="author" content="Aroma Movies">
   <title>Aroma Free Movies</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <div class="logo-container">
-            <img src="https://raw.githubusercontent.com/bmentoy/Aroma-Free-Movies/refs/heads/main/Aroma-icon.webp" alt="Aroma Icon" class="site-icon">
-            <span class="logo">Aroma Free Movies</span>
-          </div>
-          <ul class="menu">
-            <li><a href="https://bmentoy.github.io/Aroma-Free-Movies/">Home</a></li>
-            <li><a href="#movies">Movies</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="right-actions">
-            <input type="text" id="search" placeholder="Search a movie...">
-            <button id="dark-mode-toggle">Dark Mode</button>
-          </div>
-          <button id="menu-toggle" aria-label="Toggle menu">☰</button>
-        </nav>
-      </header>
-      
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/bmentoy/Aroma-Free-Movies/refs/heads/main/Aroma-icon.webp" alt="Aroma Icon" class="site-icon">
+        <span class="logo">Aroma Free Movies</span>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="right-actions">
+        <input type="text" id="search" placeholder="Search a movie..." aria-label="Search for movies">
+        <button id="dark-mode-toggle">Dark Mode</button>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
   <main>
     <section id="movies">
       <div id="movie-list"></div>
+      <button id="load-more">Load More</button>
     </section>
   </main>
+
+  <!-- Movie Details Modal -->
+  <div id="movie-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-title"></h2>
+      <iframe id="modal-trailer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- Loading Spinner -->
+  <div id="loading-spinner" class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Go to top">↑</button>
+
+  <!-- Footer -->
   <footer>
     <section id="contact">
       <h2>Contact Us</h2>
       <p>Email: support@aromamovies.com</p>
-      <p>
-        Follow us on: 
-        <a href="#">Facebook</a> | 
-        <a href="#">Twitter</a> | 
-        <a href="#">Instagram</a>
-      </p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
     </section>
     <p>&copy; 2025 Aroma Free Movies. All rights reserved. | <a href="#">Privacy Policy</a></p>
   </footer>
-  <script src="script.js"></script>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
