@@ -68,7 +68,7 @@ addMovie(
   "Azaad",
   "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Azaa_film_poster.jpg/250px-Azaa_film_poster.jpg",
   "Azaad is a 2025 Indian Hindi-language period action drama film directed by Abhishek Kapoor and produced by Ronnie Screwvala and Pragya Kapoor. The film stars Ajay Devgn and Diana Penty alongside debutants Aaman Devgan and Rasha Thadani.",
-  "https://drive.google.com/file/d/182KXFzkKJGptK92azdVvnU95HoQtZQfI/view?usp=sharing", // Updated URL
+  "https://drive.google.com/file/d/182KXFzkKJGptK92azdVvnU95HoQtZQfI/view?usp=sharing",
   ["English", "Hindi"], // Custom audio languages
   ["English", "Hindi"]  // Custom captions
 );
